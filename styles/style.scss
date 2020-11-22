@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+    background-image: url("../assets/mobile/image-host.jpg");
+    background-color: #121725;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    width: 78.5vw;
+    margin: auto;
+}
+
+.header__container svg {
+    /* width: 134px; */
+    margin: auto;
+    display: block;
+    margin-top: 62px;
+}
+
+main {
+    margin-top: 57px;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 1.65rem;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #54E6AF;
+}
+
+h1 span {
+    color: white;
+}
+
+p {
+    font-size: .933rem;
+    font-weight: 100;
+    line-height: 25px;
+    color: #C2CBE5;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.socials {
+    display: flex;
+    margin: 33px  auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+img.spotify {
+    width: 56px;
+}
+
+img.apple {
+    width: 45px;
+}
+
+img.google {
+    width: 73px;
+}
+
+img.pocket {
+    width: 77px;
+}
