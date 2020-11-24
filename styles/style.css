@@ -187,7 +187,7 @@ form {
     background-color: #121725;
     bottom: -180px;
     z-index: 1;
-    background-image: url("/assets/desktop/bg-pattern-dots.svg");
+    background-image: url("../assets/desktop/bg-pattern-dots.svg");
     background-repeat: no-repeat;
     background-position: 0% 100%;
   }
