@@ -18,8 +18,10 @@ body {
 }
 
 .container {
-  margin: auto 24px;
+  width: 78.5vw;
+  margin: auto;
   padding-bottom: 94px;
+  position: relative;
 }
 
 .header__container svg {
@@ -29,7 +31,8 @@ body {
 }
 
 main {
-  margin-top: 57px;
+  position: relative;
+  top: 25px;
 }
 
 h1 {
@@ -70,19 +73,19 @@ p {
 }
 
 img.spotify {
-  width: 56px;
+  width: 17.2%;
 }
 
 img.apple {
-  width: 45px;
+  width: 14%;
 }
 
 img.google {
-  width: 73px;
+  width: 22.28%;
 }
 
 img.pocket {
-  width: 77px;
+  width: 23.5%;
 }
 
 input[type="submit"],
@@ -94,7 +97,7 @@ input[type="submit"] {
   width: 100%;
   padding: 10px;
   background-color: #54E6AF;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   line-height: 28px;
   font-size: 0.93rem;
@@ -106,7 +109,7 @@ input.submitDocs {
   width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   line-height: 28px;
   padding-left: 25px;
   margin-bottom: 16px;
@@ -114,6 +117,7 @@ input.submitDocs {
 
 form {
   margin-top: 48px;
+  position: relative;
 }
 
 @media screen and (min-width: 690px) {
@@ -130,7 +134,62 @@ form {
     background-position: right top;
   }
   main {
-    width: 81.8%;
+    width: 94.7%;
+    top: 120px;
+    background-color: #121725;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+  }
+  .hero {
+    padding-top: 93px;
+  }
+  h1 {
+    text-align: left;
+    font-size: 2.667rem;
+    line-height: 56px;
+    letter-spacing: 3px;
+  }
+  p {
+    text-align: left;
+    margin-top: 31px;
+    width: 70.2%;
+    font-size: 1rem;
+    line-height: 28px;
+  }
+  form {
+    width: 427px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: 2/1;
+  }
+  input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    width: 200px;
+    right: 3px;
+  }
+  input.submitDocs {
+    padding: 15px;
+    background-color: #2C344B;
+    margin-bottom: 0;
+  }
+  .socials {
+    width: 84.5%;
+    margin-left: 0;
+  }
+  .container::before {
+    position: absolute;
+    content: "";
+    width: 93vw;
+    height: 244px;
+    background-color: #121725;
+    bottom: -180px;
+    z-index: 1;
+    background-image: url(/assets/desktop/bg-pattern-dots.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
