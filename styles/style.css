@@ -2,7 +2,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
   font-family: 'Chivo', sans-serif;
@@ -11,20 +13,24 @@ body {
   background-color: #121725;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white; }
+  color: white;
+  background-blend-mode: multiply;
+}
 
 .container {
-  width: 78.5vw;
-  margin: auto; }
+  margin: auto 24px;
+  padding-bottom: 94px;
+}
 
 .header__container svg {
   /* width: 134px; */
-  margin: auto;
+  margin: 62px auto;
   display: block;
-  margin-top: 62px; }
+}
 
 main {
-  margin-top: 57px; }
+  margin-top: 57px;
+}
 
 h1 {
   font-weight: 100;
@@ -32,10 +38,12 @@ h1 {
   line-height: 38px;
   text-align: center;
   text-transform: uppercase;
-  color: #54E6AF; }
+  color: #54E6AF;
+}
 
 h1 span {
-  color: white; }
+  color: white;
+}
 
 p {
   font-size: .933rem;
@@ -43,25 +51,86 @@ p {
   line-height: 25px;
   color: #C2CBE5;
   text-align: center;
-  margin-top: 16px; }
+  margin-top: 16px;
+}
 
 .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 33px  auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline; }
+  margin: 33px auto 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
 
 img.spotify {
-  width: 56px; }
+  width: 56px;
+}
 
 img.apple {
-  width: 45px; }
+  width: 45px;
+}
 
 img.google {
-  width: 73px; }
+  width: 73px;
+}
 
 img.pocket {
-  width: 77px; }
+  width: 77px;
+}
 
+input[type="submit"],
+label {
+  display: block;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #54E6AF;
+  border-radius: 20px;
+  border: none;
+  line-height: 28px;
+  font-size: 0.93rem;
+  color: #121725;
+  font-weight: 600;
+}
+
+input.submitDocs {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  line-height: 28px;
+  padding-left: 25px;
+  margin-bottom: 16px;
+}
+
+form {
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 690px) {
+  .container {
+    margin: auto 39px;
+  }
+  .header__container svg {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  body {
+    background-blend-mode: normal;
+    background-size: 64%;
+    background-position: right top;
+  }
+  main {
+    width: 81.8%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
