@@ -114,6 +114,19 @@ form {
     margin-top: 48px;
     position: relative;
 }
+span.errorMsg {
+    display: none;
+    position: relative;
+    top: -13px;
+    left: 21px;
+    color: red;
+}
+span.showError {
+    display: block;
+}
+footer {
+    display: none;
+}
 
 @media screen and (min-width: 690px) {
 
@@ -198,11 +211,17 @@ form {
     }
 
     footer {
+        display: block;
         position: absolute;
         left: 0;
         width: 232px;
         bottom: -203px;
         z-index: 4;
+    }
+    footer img {
+        width: 100%;
+        display: block;
+        margin: auto;
     }
 
 }
@@ -210,7 +229,7 @@ form {
 @media screen and (min-width: 980px) {
     .container::before {
         height: 180px;
-        bottom: -200px;
+        bottom: -203px;
     }
 }
 
@@ -230,16 +249,18 @@ form {
 
     .container {
         margin: auto 165px;
+      //  bottom: -130px;
     }
-
-    .container::before {
-        background-position: 86% 0;
-    }
+   
+  //  .container::before {
+  //      background-position: 86% 0;
+  //  }
 
     footer {
         left: auto;
         right: -150px;
         width: 232px;
-        bottom: -38px;
+        bottom: -33px;
     }
+    
 }
