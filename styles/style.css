@@ -188,6 +188,9 @@ footer {
     width: 200px;
     right: 3px;
   }
+  input[type="submit"]:hover {
+    cursor: pointer;
+  }
   input.submitDocs {
     padding: 15px;
     background-color: #2C344B;
@@ -196,6 +199,9 @@ footer {
   .socials {
     width: 84.5%;
     margin-left: 0;
+  }
+  span.errorMsg {
+    top: 10px;
   }
   .container::before {
     position: absolute;
@@ -242,11 +248,21 @@ footer {
   .container {
     margin: auto 165px;
   }
+  .container::before {
+    bottom: -150px;
+  }
   footer {
     left: auto;
     right: -150px;
     width: 232px;
     bottom: -33px;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .container {
+    width: 1400px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
