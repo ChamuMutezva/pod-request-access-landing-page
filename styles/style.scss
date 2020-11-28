@@ -183,6 +183,7 @@ form {
         margin-left: 0;
     }
 
+
     .container::before {
         position: absolute;
         content: "";
@@ -191,10 +192,19 @@ form {
         background-color: #121725;
         bottom: -180px;
         z-index: 1;
-        background-image: url("../assets/desktop/bg-pattern-dots.svg");
-        background-repeat: no-repeat;
-        background-position: 0% 100%;
+        // background-image: url("../assets/desktop/bg-pattern-dots.svg");
+        // background-repeat: no-repeat;
+        // background-position: 0% 100%;
     }
+
+    footer {
+        position: absolute;
+        left: 0;
+        width: 232px;
+        bottom: -203px;
+        z-index: 4;
+    }
+
 }
 
 @media screen and (min-width: 980px) {
@@ -206,19 +216,30 @@ form {
 
 @media screen and (min-width: 1220px) {
     body {
-       background-image: url("../assets/desktop/image-host.jpg");
+        background-image: url("../assets/desktop/image-host.jpg");
         background-position: right 135px;
     }
+
     .header__container svg {
         margin: 102px auto 0 0;
     }
+
     main {
         width: 60%;
     }
+
     .container {
         margin: auto 165px;
     }
-    .container::before {        
+
+    .container::before {
         background-position: 86% 0;
+    }
+
+    footer {
+        left: auto;
+        right: -150px;
+        width: 232px;
+        bottom: -38px;
     }
 }

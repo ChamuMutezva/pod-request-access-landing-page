@@ -189,9 +189,13 @@ form {
     background-color: #121725;
     bottom: -180px;
     z-index: 1;
-    background-image: url("../assets/desktop/bg-pattern-dots.svg");
-    background-repeat: no-repeat;
-    background-position: 0% 100%;
+  }
+  footer {
+    position: absolute;
+    left: 0;
+    width: 232px;
+    bottom: -203px;
+    z-index: 4;
   }
 }
 
@@ -218,6 +222,12 @@ form {
   }
   .container::before {
     background-position: 86% 0;
+  }
+  footer {
+    left: auto;
+    right: -150px;
+    width: 232px;
+    bottom: -38px;
   }
 }
 /*# sourceMappingURL=style.css.map */
